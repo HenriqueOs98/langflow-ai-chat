@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChatGPT Clone</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Google Fonts for improved typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
+</head>
+<body>
+  <div class="app-container">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <button id="new-chat-button">New Chat</button>
+      </div>
+      <div class="chat-history" id="chat-history-list">
+        <!-- Chat history items -->
+        <div class="chat-history-item active">
+          <span class="chat-icon">💬</span>
+          <span class="chat-title">Welcome Chat</span>
+        </div>
+      </div>
+    </aside>
+    <main class="main-content">
+      <div class="chat-container">
+        <div class="chat-header">
+          <h2>ChatGPT Clone Chat</h2>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+          <!-- Example chat messages -->
+          <div class="message ai-message">
+            <div class="message-content">Hello, how can I help you today?</div>
+            <div class="timestamp">10:00 AM</div>
+          </div>
+        </div>
+        <div class="input-container">
+          <input type="text" id="user-input" placeholder="Type your message..." autocomplete="off">
+          <button id="send-button">Send</button>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
